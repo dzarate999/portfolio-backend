@@ -5,6 +5,7 @@ const cors = require('cors');
 
 const sendGrid = require('@sendGrid/mail');
 
+const port = process.env.PORT || 3030;
 
 const app = express();
 
@@ -51,4 +52,4 @@ app.post('/api/email', (req, res, next) => {
     });
 });
 
-app.listen(3030, '0.0.0.0');
+app.listen(port, '0.0.0.0');

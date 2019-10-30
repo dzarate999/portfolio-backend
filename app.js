@@ -3,7 +3,7 @@ require('dotenv/config');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const sendGrid = require('@sendGrid/mail');
+const sendGrid = require('@sendgrid/mail');
 
 const port = process.env.PORT || 5000;
 
